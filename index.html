@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohith's Portfolio</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Assets/r.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Student</p>
+                <h1>Hi, I'M <span>Rohith</span><br>from Hyderabad</h1>
+            </div>
+        </div>
+    </div>
+    <!-- About-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Assets/rohith.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>This is Rohith pursuing final year with computer science and engineering background.
+                        Passionate to get into IT with an developer role.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('certifications')">Certifications</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-End Development : </span><br> 
+                                <p> HTML, CSS , Javascript, React JS </p><br>
+                                <h3>Frameworks :</h3>
+                                <p> Bootstrap , Tailwind CSS</p><br>
+                            </li>
+                            <li>
+                                <span>Backend & Full Stack Development : </span><br>
+
+                                <p>Core JAVA, Node.js , Express JS, MySQL, MongoB, REST API, MERN Stack</p>
+                                
+                            </li>
+                            <li>
+                                <span>Cybersecurity & Recon Too:</span><br>
+                                Used in ethical hacking, penetration testing, and vulnerability assessments:<br>
+                                nmap: Network and port scanner<br>
+                                subfinder: Subdomain enumeration tool<br>
+                                assetfinder: Domain and subdomain discovery<br>
+                                gau (GetAllURLs): URL gathering from public sources<br>
+                                katana: High-performance web crawler<br>
+                                nuclei: Customizable vulnerability scanner with templates<br>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certifications">
+                        <ul>
+                            <li><span>Programming languages: </span><br>
+                                <p>Java :<a href="https://www.hackerrank.com/certificates/2cc6abe8813b">java</a></p><br>
+                                <p>Python : <a href="certifications\python - skill india.pdf">Python</a></p><br>
+
+                        </li>
+                        <li><span>Technologies: </span><br>
+                            <p>CSS: <a href="https://www.hackerrank.com/certificates/e9c3c23ee1fe">CSS</a></p><br>
+                            <p> Javascript: <a href="https://www.hackerrank.com/certificates/iframe/0b3c2554fb27">JAVASCRIPT</a></p><br>
+                        </li>
+                        <li> <span>Others : <a href="https://www.hackerrank.com/certificates/iframe/eb469007ea5e">PPS</a></span><br>
+                            <p>Networks: </p><br>
+                            <p>Cybersecurity: </p><br>
+                        </li>
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>CMR ENGINEERING COLLEGE : </span><br>
+                            
+                            <p>Btech - Computer science and engineering ( CyberSecurity) <br>
+                            2022-2026 - 8.2 CGPA</p>
+                            </li>
+
+                            <li><span>Narayana junior college : </span><br>
+                            
+                                <p>Intermediate  <br>
+                                2020-2022 - 96%</p>
+                            </li>
+
+                            <li><span>SPR School of Excellence:</span><br>
+                            
+                                <p>HIGH SCHOOL <br>
+                                2017-2020 - 10.00GPA</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Projects -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-titel">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/Assets/trade.jpeg">
+                    <div class="layer">
+                        <h3>Shobai: </h3>
+                        <p>The web platform helps you to place order for the equity markets with the real time market updates</p>
+                        <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src ="Assets/donate.jpeg">
+                    <div class="layer">
+                        <h3>ShearWear:</h3>
+                        <p>This web platform helps you to faciliate food and clothing donations, which connects donors with recipients </p>
+                        <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Assets/music.jpeg">
+                    <div class="layer">
+                        <h3>Friendie: </h3>
+                        <p>This web platforms gives access to stream and llisten to music online</p>
+                        <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/rohithk28" class="btn">See More 
+
+            </a>
+        </div>
+    </div>
+
+<!--Contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p> <i class="fa-solid fa-envelope"></i> rohith.kontham2803@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 8099993627</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/rohith-kontham-90a071272?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BsDonOASnRryrFPLnQ2%2BSUg%3D%3D"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/rohithk28"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="Assets/myresume.pdf" download class="btn btn2">Download Resume/CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit"class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+
+        </div>
+        <div class="copyright">
+            <p>Copyright © Rohith<i class="fas fa-heart"></i></p>
+        </div>
+    </div>
+</div>
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwBTw96rZjwgpP7gqUydmXOaN5e_oTv3zMm4PGmEKs8rrmpCzaaygkxlr199A_AXNIvRA/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg");
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Messafe sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=" "
+                },5000)
+                form.reset();
+                
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
